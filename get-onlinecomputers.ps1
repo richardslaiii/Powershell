@@ -16,5 +16,7 @@ $Offlinecomputers = New-Object System.Collections.ArrayList
  }
  }
  $onlinecomputers | Add-Member -MemberType Noteproperty -Name 'computer' -Value "$computer"
- 
- $onlinecomputers
+ $offlinecomputers | add-member -membertype Noteproperty -name 'computer' -value "$computer"
+
+$onlinecomputers
+$offlinecomputers
